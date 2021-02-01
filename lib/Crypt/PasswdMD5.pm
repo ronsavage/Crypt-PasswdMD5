@@ -7,9 +7,9 @@ use Digest::MD5;
 
 use Exporter 'import';
 
-our @EXPORT    = qw/unix_md5_crypt apache_md5_crypt/;
-our @EXPORT_OK = (@EXPORT, 'random_md5_salt');
-our $VERSION   ='1.40';
+our @EXPORT		= qw/unix_md5_crypt apache_md5_crypt/;
+our @EXPORT_OK	= (@EXPORT, 'random_md5_salt');
+our $VERSION	= '1.41';
 
 # ------------------------------------------------
 
