@@ -17,7 +17,7 @@ my(%params) =
 (
 	($] ge '5.005') ?
 	(
-		AUTHOR		=> 'Luis E. Muñoz <luismunoz@cpan.org>',
+		AUTHOR		=> 'Luis E. Munoz <luismunoz@cpan.org>',
 		ABSTRACT	=> 'Provide interoperable MD5-based crypt() functions',
 	   ) : (),
 	clean =>
