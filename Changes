@@ -52,5 +52,5 @@ Revision history for Perl extension Crypt::PasswdMD5.
 	- Added apache_md5_crypt to create a valid hash for use in .htpasswd files.
 
 1.00  1998-07-10
-	- Luis E. Muñoz <luismunoz@cpan.org>.
+	- Luis E. Munoz <luismunoz@cpan.org>.
 	- Initial release.
