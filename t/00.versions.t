@@ -5,14 +5,13 @@ use warnings;
 
 # I tried 'require'-ing modules but that did not work.
 
-use Config::Tiny; # For the version #.
+use Crypt::PasswdMD5; # For the version #.
 
 use Test::More;
 
-use File::Spec;
-use File::Temp;
+use Digest::MD5;
 use strict;
-use utf8;
+use warnings;
 
 # ----------------------
 
@@ -20,13 +19,12 @@ pass('All external modules loaded');
 
 my(@modules) = qw
 /
-	File::Spec
-	File::Temp
+	Digest::MD5
 	strict
-	utf8
+	warnings
 /;
 
-diag "Testing Config::Tiny V $Config::Tiny::VERSION";
+diag "Testing Crypt::PasswdMD5 V $Crypt::PasswdMD5::VERSION";
 
 for my $module (@modules)
 {
