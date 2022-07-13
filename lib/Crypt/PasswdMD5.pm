@@ -4,6 +4,7 @@ use strict;
 use warnings;
 
 use Digest::MD5;
+use Encode;
 
 use Exporter 'import';
 
@@ -70,8 +71,9 @@ sub unix_md5_crypt
 	my($pw, $salt) = @_;
 
 	my($passwd);
+	$pw = Encode::encode('utf8', $pw) if Encode::is_utf8($pw);
 
-    if (defined $salt)
+	if (defined $salt)
 	{
 		$salt =~ s/^\Q$Magic//;	# Take care of the magic string if present.
 		$salt =~ s/^(.*)\$.*$/$1/;	# Salt can have up to 8 chars...
@@ -80,7 +82,7 @@ sub unix_md5_crypt
 	else
 	{
 		$salt = random_md5_salt();	 	# In case no salt was proffered.
-    }
+	}
 
 	my($ctx) = Digest::MD5 -> new;	# Here we start the calculation.
 
