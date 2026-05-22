@@ -35,6 +35,7 @@ my(%params) =
 	PL_FILES	=> {},
 	PREREQ_PM	=>
 	{
+		'Crypt::URandom'	=> 0,
 		'Digest::MD5'	=> 2.53,
 		'strict'		=> 0,
 		'warnings'		=> 0,
