@@ -3,6 +3,7 @@ package Crypt::PasswdMD5;
 use strict;
 use warnings;
 
+use Crypt::URandom qw(urandom);
 use Digest::MD5;
 use Encode;
 
@@ -40,7 +41,7 @@ sub random_md5_salt
 	# Sanity check.
 
 	$len  = $max_salt_length unless ( ($len >= 1) and ($len <= $max_salt_length) );
-	$salt .= substr($itoa64,int(rand(64)),1) for (1..$len);
+	$salt .= substr($itoa64,unpack("C",urandom(1))&0x3F,1) for (1..$len);
 
 	return $salt;
 
