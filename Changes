@@ -5,7 +5,7 @@ Revision history for Perl extension Crypt::PasswdMD5.
 		weak rand() function with the much stronger Crypt::URandom::urandom().
 		With thanx.
 	- Add files AI_POLICY.md & SECURITY.md to the distro.
-	- Add files LICENSE-Artistic-2.0 LICENSE-GPL-3 to the distro
+	- Replace file LICENSE with the latest LICENSE-GPL-3 file.
 
 1.42  2022-07-13T16:20:00
 	- Accept pull request from Dmitry Karasik, to handle the case where the password
