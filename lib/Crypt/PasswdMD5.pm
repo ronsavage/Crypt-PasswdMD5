@@ -236,14 +236,6 @@ For both functions, if a salt value is not supplied, a random salt will be
 generated, using the function random_md5_salt().
 This function is not exported by default.
 
-=head1 LICENSE AND WARRANTY
-
-This code and all accompanying software comes with NO WARRANTY. You
-use it at your own risk.
-
-This code and all accompanying software can be used freely under the
-same terms as Perl itself.
-
 =head1 METHODS
 
 =head2 apache_md5_crypt($password, $salt)
@@ -279,6 +271,14 @@ L<https://github.com/ronsavage/Crypt-PasswdMD5.git>
 Bugs should be reported via the CPAN bug tracker at
 
 L<https://github.com/ronsavage/Crypt-PasswdMD5/issues>
+
+=head1 LICENSE, AND DISCLAIMER
+
+See the accompanying LICENSE file.
+
+This program is distributed in the hope that it will be useful, but
+without any warranty; without even the implied warranty of
+merchantability or fitness for a particular purpose.
 
 =head1 AUTHOR
 
